@@ -7,15 +7,15 @@ Performs a broadband speed test, and uploads the results to a https://api.things
 
 Installing
 ----------
-Ensure you have a recent version of `pipenv` installed (possibly `pyenv` too). 
-Run `pipenv sync` to install all the necessary requirements.
+Ensure you have a recent version of ``pipenv`` installed (possibly ``pyenv`` too). 
+Run ``pipenv sync`` to install all the necessary requirements.
 
-Edit the `beebeelog/config.py` and set the **api_key** with the correct value obtained
+Edit the ``beebeelog/config.py`` and set the **api_key** with the correct value obtained
 from your channel configuration on https://www.thingspeak.com.
 
 Running
 -------
-Run `pipenv run python beebeelog/check_speed.py`.
+Run ``pipenv run python beebeelog/check_speed.py``.
 
 TODO
 ----
