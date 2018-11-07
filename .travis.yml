@@ -1,0 +1,9 @@
+sudo: false
+language: python
+install:
+  - pip3 install pipenv
+  - pipenv install --dev
+  - pipenv sync
+script:
+  - pipenv run flake8
+

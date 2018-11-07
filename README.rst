@@ -1,4 +1,18 @@
-# MIT License
+SpeedTest Logger
+================
+.. image:: https://travis-ci.org/rm-hull/speedtest-logger.svg?branch=master
+   :target: https://travis-ci.org/rm-hull/speedtest-logger
+
+Performs a broadband speed test, and uploads the results to a https://api.thingspeak.com channel. 
+
+TODO
+----
+* Systemd service definition
+
+License
+-------
+
+The MIT License (MIT)
 
 Copyright (c) 2018 Richard Hull
 
