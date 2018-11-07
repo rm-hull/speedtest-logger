@@ -23,6 +23,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import sys
 import speedtest
 import json
 import requests
@@ -52,9 +53,10 @@ if __name__ == "__main__":
     s.download()
     s.upload()
 
+    print(json.dumps(s.results.dict()))
+
     ts = thing_speak(config.api_key)
     resp = ts.persist(s.results)
     if resp.status_code != 200:
         print('*** Unexpected ThingSpeak HTTP response status: {}'.format(resp.status_code))
-
-    print(json.dumps(s.results.dict()))
+        sys.exit(1)
