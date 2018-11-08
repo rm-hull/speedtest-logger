@@ -3,7 +3,9 @@ SpeedTest Logger
 .. image:: https://travis-ci.org/rm-hull/speedtest-logger.svg?branch=master
    :target: https://travis-ci.org/rm-hull/speedtest-logger
 
-Performs a broadband speed test, and uploads the results to a https://api.thingspeak.com channel. 
+Performs a background broadband speed test, and then uploads the results to a 
+https://api.thingspeak.com channel. For best (most realistic) performance, this 
+ought to be run on a wired ethernet connection rather than over a WIFI connection.
 
 Installing
 ----------
@@ -15,7 +17,8 @@ from your channel configuration on https://www.thingspeak.com.
 
 Running
 -------
-Run ``pipenv run python beebeelog/check_speed.py``.
+Run ``pipenv run python beebeelog/check_speed.py``. Use crontab to automate this to
+execute on a scheduled basis.
 
 TODO
 ----
