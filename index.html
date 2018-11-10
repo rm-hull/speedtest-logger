@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>Broadband Speedtest Logger</title>
+    <link rel="shortcut icon" href="/img/favicon.ico"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="http://code.highcharts.com/stock/highstock.js"></script>
+    <script src="http://code.highcharts.com/stock/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>
+    <style>
+      body {
+        background-color: white;
+        font-family: sans-serif;
+        font-size: 12px;
+      }
+      h2 {
+        font-size: 64px;
+        text-shadow: 0px 1px 2px black;
+        color: #f9f9f9
+      }
+      #please-wait {
+        text-align: center;
+      }
+      #chart-container {
+        height: 600px;
+      }
+      #controls {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="chart-container">
+      <h2 id="please-wait"> Please wait &ndash; loading data</h2>
+    </div>
+    <div id="controls"> 
+      <label for="auto-update">Auto-update</label>
+      <input id="auto-update" type="checkbox" checked>
+      <button value="Load More Data" name="Load More Data" onclick="loadOneChannel();">Load More Historical Data</button>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-39680853-15"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-39680853-15');
+    </script>
+  </body>
+</html>
