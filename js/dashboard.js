@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   function loadThingSpeakChannel(channelNumber, key, sentFieldList) {
     var fieldList = sentFieldList;
-    $.getJSON('https://api.thingspeak.com/channels/' + channelNumber + '/feed.json?round=3&results=721&api_key=' + key, function(data) {
+    $.getJSON('https://api.thingspeak.com/channels/' + channelNumber + '/feed.json?round=3&results=169&api_key=' + key, function(data) {
         if (data == '-1') {
           $('#chart-container').append('This channel is not public.  To embed charts, the channel must be public or a read key must be specified.');
           console.log('Thingspeak Data Loading Error');
@@ -106,10 +106,6 @@ $(document).ready(function() {
       },
       rangeSelector: {
         buttons: [
-          { count: 30, type: 'minute', text: '30M' },
-          { count:  2, type: 'hour',   text: '2H' },
-          { count:  6, type: 'hour',   text: '6H' },
-          { count: 12, type: 'hour',   text: '12H' },
           { count:  1, type: 'day',    text: 'D' },
           { count:  1, type: 'week',   text: 'W' },
           { count:  1, type: 'month',  text: 'M' },
@@ -117,7 +113,7 @@ $(document).ready(function() {
           {            type: 'all', text: 'All' }
         ],
         inputEnabled: true,
-        selected: 5
+        selected: 2
       },
       plotOptions: {
         line: {
