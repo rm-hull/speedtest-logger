@@ -7,6 +7,8 @@ Performs a background broadband speed test, and then uploads the results to a
 https://api.thingspeak.com channel. For best (most realistic) performance, this 
 ought to be run on a wired ethernet connection rather than over a WIFI connection.
 
+.. image:: screenshot.png?raw=true 
+
 Installing
 ----------
 Ensure you have a recent version of ``pipenv`` installed (possibly ``pyenv`` too). 
