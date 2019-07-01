@@ -136,8 +136,8 @@ $(document).ready(function() {
         }
       },
       yAxis: [
-        { id: 'D', title: { text: 'Speed (Mb/sec)' }, opposite: false, lineWidth: 1, min: 0, max: 40, labels: { format: '{value:.3f}' } },
-        { id: 'U', visible: false, title: { text: 'Upload (Mb/sec)' }, opposite: false, lineWidth: 1, min: 0, max: 40, labels: { format: '{value:.3f}' } },
+        { id: 'D', title: { text: 'Speed (Mb/sec)' }, opposite: false, lineWidth: 1, min: 0, max: 120, labels: { format: '{value:.3f}' } },
+        { id: 'U', visible: false, title: { text: 'Upload (Mb/sec)' }, opposite: false, lineWidth: 1, min: 0, max: 120, labels: { format: '{value:.3f}' } },
         { id: 'P', title: { text: 'Ping (ms)' }, opposite: true, min: 0, max: 50, labels: { format: '{value:.3f}' } }
       ],
       exporting: {
